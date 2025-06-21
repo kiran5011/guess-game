@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing the number Game</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Guess The Number</h1>
+    </div>
+    <div>
+        <b id="msgbox">
+            Start the Game!!!
+        </b>
+    </div>
+    <p>
+        <b>
+            Enter a number between 1 to 100.
+        </b>
+    </p>
+    <br>
+    <div id="rules">
+        <h2 >
+           <u> Rules of the Game </u>
+        </h2>
+        Computer will choose a number. and you have to guess it.<br>
+        If the number you guessed is not same as computer.<br>
+        It will show if you are higher or lower as Hint.
+        Try till you get the number.<br>and When you get the number
+        Number of attempts will be shown.
+    </div>
+    <br>
+
+    <form id="user" class="userinputbox">
+        <input id="numInput" name="numInput" placeholder="Enter what you think" type="number" maxlength="2" />
+        <br>
+        <button type="submit" id="submit">Submit
+        </button>
+    </form>
+    <div id="score">
+        Attempts : 0
+    </div>
+    <script src="gamescript.js"></script>
+</body>
+
+</html>
