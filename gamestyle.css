@@ -1,0 +1,72 @@
+body{
+    background-color: darkseagreen;
+    text-align: center;
+    font-size: larger;
+    color:white;
+}
+
+#heading{
+    text-align: center;
+    margin-top: 0em;
+    line-height: 4rem;
+    background-color: black;
+    color:white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+p{
+    color: white;
+    background-color:black;
+    display: inline-block;
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+#user{
+    color:white;
+    background-color:black;
+    display: inline-block;
+    padding: 2rem;
+    padding-left:6rem;
+    padding-right: 6rem;
+    margin-top: 1rem;
+    border-width: 2px;
+    border-style: double;
+    border-color: black;
+    border-radius: 1rem;
+    font-size: medium;
+}
+
+#msgbox{
+    color:white;
+    background-color:black;
+    display: inline-block;
+    padding: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 0.1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+input,button{
+    font-size: 1.5rem;
+    background-color: beige;
+    color:black;
+}
+#score{
+    color:white;
+    background-color:black;
+    display: inline;
+    font-size: 3rem;
+}
+#rules{
+    background-color: black;
+    display:inline-block;
+    border-radius: 1rem;
+    padding: .5rem;
+}
