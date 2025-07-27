@@ -29,12 +29,13 @@ function compare(generatedvalue, inputvalue) {
             msg.innerText = "It's high,Enter a lower number";
             msg.style.backgroundColor="blue";
             attemps++;
+            score.innerText=`Attempts :${attemps}`;
         }
         else if (generatedvalue < inputvalue) {
             msg.innerText = "It's Low,Enter a Higher number";
             msg.style.backgroundColor="blue";
             attemps++;
-
+            score.innerText=`Attempts :${attemps}`;
         }
     }
     else if (generatedvalue === inputvalue) {
