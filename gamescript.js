@@ -1,12 +1,13 @@
 let inputvalue;
+let attemps = 0;
 let generatedvalue;
 let user = document.getElementById("user");
 let score= document.getElementById("score");
+let msg = document.querySelector("#msgbox");
 generatedvalue = Generate();
 user.addEventListener('submit', function (event) {
     event.preventDefault();
 })
-let attemps = 0;
 window.onload = function () {
     document.getElementById("submit").addEventListener("click",
         function () {
@@ -19,29 +20,31 @@ function Generate() {
     let realno = Math.floor(Math.random() * 100);
     return realno;
 }
-let msg = document.querySelector("#msgbox");
-function game() { }
 
 
 function compare(generatedvalue, inputvalue) {
     if (generatedvalue !== inputvalue) {
         if (generatedvalue > inputvalue) {
             msg.innerText = "It's high,Enter a lower number";
-            msg.style.backgroundColor="blue";
+            msg.style.color="Red";
             attemps++;
-            score.innerText=`Attempts :${attemps}`;
+            score.innerText=`Attempts :${attemps}`; 
+
         }
         else if (generatedvalue < inputvalue) {
             msg.innerText = "It's Low,Enter a Higher number";
-            msg.style.backgroundColor="blue";
+            msg.style.color="Blue";
             attemps++;
-            score.innerText=`Attempts :${attemps}`;
+            score.innerText=`Attempts :${attemps}`; 
+    
+
         }
     }
     else if (generatedvalue === inputvalue) {
+        attemps++;     
         msg.innerText = "You got the number!";
-        msg.style.backgroundColor="green";
-        score.innerText=`Attempts :${attemps}`;       
+        msg.style.color="Purple";
+        score.innerText=`Attempts :${attemps}`; 
     }
 }
 
